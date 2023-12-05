@@ -24,7 +24,7 @@ namespace AdventOfCode.Days.Day2
                 result2 += CreateGamePart2(line);
             }
             result1.RemoveAll(item => item == null);
-            Console.WriteLine($"Day2 results: Part1 {result1.Sum(x=>x.ID)} Part2 {result2}");
+            Console.WriteLine($"Day2 results: Part1 = {result1.Sum(x=>x.ID)} Part2 = {result2}");
         }
 
         private static Game CreateGamePart1(string line)

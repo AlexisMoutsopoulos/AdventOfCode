@@ -74,7 +74,7 @@ namespace AdventOfCode.Days.Day1
                 part1 += LineNumber(line);
                 part2 += LineNumberV2(line);
             }
-            Console.WriteLine($"Day1 results:  Part1= {part1}  Part2= {part2}");
+            Console.WriteLine($"Day1 results: Part1= {part1}  Part2 = {part2}");
         }
 
 
