@@ -9,11 +9,12 @@ using AdventOfCode.Days.Day7;
 using AdventOfCode.Helpers;
 using System.Runtime.CompilerServices;
 
-//Day1.CalculateTotalCalibrationValue("Days\\Day1\\Day1Input.txt");
-//Day2.LoadData("Days\\Day2\\Day2Input.txt");
+//Day1.Day1Problem("Days\\Day1\\Day1Input.txt");
+//Day2.Day2Problem("Days\\Day2\\Day2Input.txt");
 //Day3.Day3Problem("Days\\Day3\\Day3Input.txt");
 //Day4.Day4Problem("Days\\Day4\\Day4Input.txt");
 //Day5.Day5Problem("Days\\Day5\\Day5Input.txt");
 //Day6.Day6Problem("Days\\Day6\\Day6Input.txt");
-Day7.Day7Problem("Days\\Day7\\Day7Input.txt");
+//Day7.Day7Problem("Days\\Day7\\Day7Input.txt");
+Day8.Day8Problem("Days\\Day8\\Day8Input.txt");
 Console.ReadLine();

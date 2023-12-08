@@ -15,6 +15,7 @@ namespace AdventOfCode.Days.Day6
             long partTwo = PartTwo(filename);
             Console.WriteLine($"Day6 Results: Part1 = {partOne} Part2 = {partTwo}");
         }
+        
 
         private static (long,long) TakeTimeDistance(List<int> time, List<int> distance)
         {

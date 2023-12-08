@@ -63,7 +63,7 @@ namespace AdventOfCode.Days.Day1
             return Convert.ToInt32(result[first].ToString() + result[last].ToString());
         }
 
-        public static void CalculateTotalCalibrationValue(string filename)
+        public static void Day1Problem(string filename)
         {
             string file = ReadFile.Read(filename);
             string[] lines = file.Split("\r\n");

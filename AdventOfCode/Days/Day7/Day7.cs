@@ -15,7 +15,7 @@ namespace AdventOfCode.Days.Day7
         {
             int partOne = PartOne(filename);
             var partTwo = PartTwo(filename); 
-            Console.WriteLine($"Day6 Results: Part1 = {partOne} Part2 = {partTwo}");
+            Console.WriteLine($"Day7 Results: Part1 = {partOne} Part2 = {partTwo}");
         }
 
         private static int PartTwo(string filename)

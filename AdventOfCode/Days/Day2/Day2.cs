@@ -12,7 +12,7 @@ namespace AdventOfCode.Days.Day2
         private const int BLUE = 14;
         private const int RED = 12;
         private const int GREEN = 13;
-        public static void LoadData(string filename)
+        public static void Day2Problem(string filename)
         {
             string file = ReadFile.Read(filename);
             string[] lines = file.Split("\r\n");
