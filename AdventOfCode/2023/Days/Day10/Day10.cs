@@ -34,7 +34,7 @@ namespace AdventOfCode._2023.Days.Day10
                 for (int j = 0; j < mapElements.GetLength(1); j++)
                 {
                     string element = mapElements[i, j]?.Value ?? ".";
-                    if ("|JLF7".Contains(cx))
+                    if ("|JLF7".Contains(element))
                     {
                         switch (element)
                         {
@@ -57,7 +57,7 @@ namespace AdventOfCode._2023.Days.Day10
                             default: break;
                         }
                     }
-                    else if (cx == ".")
+                    else if (element == ".")
                         if (inside) count++;                    
                 }
             }
