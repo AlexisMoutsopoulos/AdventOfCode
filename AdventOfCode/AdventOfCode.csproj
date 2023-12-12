@@ -10,8 +10,11 @@
   <ItemGroup>
     <None Remove="2022\Days\Day1\Day1.txt" />
     <None Remove="2022\Days\Day1\Day1Input.txt" />
+    <None Remove="2022\Days\Day2\Day2.txt" />
+    <None Remove="2022\Days\Day2\Day2Input.txt" />
     <None Remove="2023\Days\Day10\Day10Input.txt" />
     <None Remove="2023\Days\Day11\Day11Input.txt" />
+    <None Remove="2023\Days\Day12\Day12Input.txt" />
     <None Remove="2023\Days\Day9\Day9Input.txt" />
     <None Remove="Day1Input.txt" />
     <None Remove="2023\Days\Day1\Day1.txt" />
@@ -28,10 +31,16 @@
     <EmbeddedResource Include="2022\Days\Day1\Day1Input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="2022\Days\Day2\Day2Input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day10\Day10Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day11\Day11Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2023\Days\Day12\Day12Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day2\Day2Input.txt">
@@ -41,6 +50,9 @@
 
   <ItemGroup>
     <Content Include="2022\Days\Day1\Day1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2022\Days\Day2\Day2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="2023\Days\Day1\Day1.txt">

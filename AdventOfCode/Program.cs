@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdventOfCode._2023.Days.Day10;
 using AdventOfCode._2023.Days.Day11;
+using AdventOfCode._2023.Days.Day12;
 using AdventOfCode._2023.Days.Day9;
 using AdventOfCode.Days.Day1;
 using AdventOfCode.Days.Day2;
@@ -22,5 +23,6 @@ using System.Runtime.CompilerServices;
 //Day8.Day8Problem("2023\\Days\\Day8\\Day8Input.txt");
 //Day9.Day9Problem("2023\\Days\\Day9\\Day9Input.txt");
 //Day10.Day10Problem("2023\\Days\\Day10\\Day10Input.txt");
-Day11.Day11Problem("2023\\Days\\Day11\\Day11Input.txt");
+//Day11.Day11Problem("2023\\Days\\Day11\\Day11Input.txt");
+Day12.Day12Problem("2023\\Days\\Day12\\Day12Input.txt");
 Console.ReadLine();
