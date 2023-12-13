@@ -2,6 +2,7 @@
 using AdventOfCode._2023.Days.Day10;
 using AdventOfCode._2023.Days.Day11;
 using AdventOfCode._2023.Days.Day12;
+using AdventOfCode._2023.Days.Day13;
 using AdventOfCode._2023.Days.Day9;
 using AdventOfCode.Days.Day1;
 using AdventOfCode.Days.Day2;
@@ -24,5 +25,6 @@ using System.Runtime.CompilerServices;
 //Day9.Day9Problem("2023\\Days\\Day9\\Day9Input.txt");
 //Day10.Day10Problem("2023\\Days\\Day10\\Day10Input.txt");
 //Day11.Day11Problem("2023\\Days\\Day11\\Day11Input.txt");
-Day12.Day12Problem("2023\\Days\\Day12\\Day12Input.txt");
+//Day12.Day12Problem("2023\\Days\\Day12\\Day12Input.txt");
+Day13.Day13Problem("2023\\Days\\Day13\\Day13Input.txt");
 Console.ReadLine();
