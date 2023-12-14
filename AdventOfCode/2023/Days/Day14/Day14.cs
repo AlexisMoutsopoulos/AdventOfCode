@@ -22,7 +22,7 @@ namespace AdventOfCode._2023.Days.Day14
             Dictionary<string, int> cache = new();
             var data = GetData(filename); string[,]
             cycle = data;
-            for (int i = 1; i <= 1000000000; i++)
+            for (int i = 1; i <= 1_000_000_000; i++)
             {
                 cycle = Cycle(cycle);
                 string cycleString = ConvertArrayToString(cycle);
