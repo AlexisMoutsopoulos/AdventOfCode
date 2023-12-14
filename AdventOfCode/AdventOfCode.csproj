@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -16,6 +16,7 @@
     <None Remove="2023\Days\Day11\Day11Input.txt" />
     <None Remove="2023\Days\Day12\Day12Input.txt" />
     <None Remove="2023\Days\Day13\Day13Input.txt" />
+    <None Remove="2023\Days\Day14\Day14Input.txt" />
     <None Remove="2023\Days\Day9\Day9Input.txt" />
     <None Remove="Day1Input.txt" />
     <None Remove="2023\Days\Day1\Day1.txt" />
@@ -45,6 +46,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day13\Day13Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2023\Days\Day14\Day14Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day2\Day2Input.txt">
