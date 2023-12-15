@@ -44,7 +44,7 @@ namespace AdventOfCode._2023.Days.Day12
 
         private static long CachCheck(string value,List<int> groups)
         {
-            var key = $"{value},{string.Join(',', groups)}";  // Cache key: spring pattern + group lengths
+            var key = $"{value},{string.Join(',', groups)}"; 
 
             if (cache.TryGetValue(key, out var value1))
             {
