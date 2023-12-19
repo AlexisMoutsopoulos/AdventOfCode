@@ -169,51 +169,47 @@ namespace AdventOfCode._2023.Days.Day19
 
         
 
-        private static long GetRangeLengths(Dictionary<string, Range> ranges, List<Condition> startFlow)
+        private static long GetRangeLengths(Dictionary<string, Range> ranges, List<Condition> con)
         {
             long result = 0L;
-            foreach (var step in startFlow)
+            foreach (Condition condition in con)
             {
                 Dictionary<string,Range> nR = new(ranges);
 
-                if (step.Symbol == ">")
+                if (condition.Symbol == ">")
                 {
 
-                    if (ranges[step.Name].End.Value > step.Value) //Do we have any valid points
+                    if (ranges[condition.Name].End.Value > condition.Value) 
                     {
-                        //Send the valid values off to their new home
-                        nR[step.Name] = Math.Max(nR[step.Name].Start.Value, step.Value + 1)..nR[step.Name].End;
-                        if (step.Success == "A") result += nR.len();
-                        else if (step.Success != "R") result += GetRangeLengths(nR, workflows[step.Success]);
+                        nR[condition.Name] = Math.Max(nR[condition.Name].Start.Value, condition.Value + 1)..nR[condition.Name].End;
+                        if (condition.Success == "A") result += nR.len();
+                        else if (condition.Success != "R") result += GetRangeLengths(nR, workflows[condition.Success]);
 
-                        //Take the invalid values and pass them to the next step in the workflow.
-                        ranges[step.Name] = ranges[step.Name].Start..step.Value;
+                        ranges[condition.Name] = ranges[condition.Name].Start..condition.Value;
                     }
 
                 }
-                if (step.Symbol == "<")
+                if (condition.Symbol == "<")
                 {
-                    if (ranges[step.Name].Start.Value < step.Value) //Do we have any valid points
+                    if (ranges[condition.Name].Start.Value < condition.Value) 
                     {
-                        //Send the valid values off to their new home
-                        nR[step.Name] = nR[step.Name].Start..Math.Min(nR[step.Name].End.Value, step.Value - 1);
-                        if (step.Success == "A") result += nR.len();
-                        else if (step.Success != "R") result += GetRangeLengths(nR, workflows[step.Success]);
+                        nR[condition.Name] = nR[condition.Name].Start..Math.Min(nR[condition.Name].End.Value, condition.Value - 1);
+                        if (condition.Success == "A") result += nR.len();
+                        else if (condition.Success != "R") result += GetRangeLengths(nR, workflows[condition.Success]);
 
-                        //Take the invalid values and pass them to the next step in the workflow.
-                        ranges[step.Name] = step.Value..ranges[step.Name].End;
+                        ranges[condition.Name] = condition.Value..ranges[condition.Name].End;
                     }
 
                 }
             }
 
-            if (startFlow.FirstOrDefault(x => x.Failure == "A")?.Failure != String.Empty)
+            if (con.FirstOrDefault(x => !string.IsNullOrEmpty(x.Failure))?.Failure == "A")
             {
                 result += ranges.len();
             }
-            else if (startFlow.FirstOrDefault(x => x.Failure != "R")?.Failure != String.Empty)
-            {
-                result += GetRangeLengths(ranges, workflows[startFlow.FirstOrDefault(x => x.Failure != "R").Failure]);
+            else if (con.FirstOrDefault(x => !string.IsNullOrEmpty(x.Failure))?.Failure != "R")
+            { 
+                result += GetRangeLengths(ranges, workflows[con.FirstOrDefault(x => !string.IsNullOrEmpty(x.Failure)).Failure]);
             }
 
             return result;
