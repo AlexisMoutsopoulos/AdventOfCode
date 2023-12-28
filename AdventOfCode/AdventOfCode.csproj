@@ -25,6 +25,9 @@
     <None Remove="2023\Days\Day19\Day19Input.txt" />
     <None Remove="2023\Days\Day20\Day20Input.txt" />
     <None Remove="2023\Days\Day21\Day21Input.txt" />
+    <None Remove="2023\Days\Day22\Day22Input.txt" />
+    <None Remove="2023\Days\Day23\Day23Input.txt" />
+    <None Remove="2023\Days\Day25\Day25Input.txt" />
     <None Remove="2023\Days\Day9\Day9Input.txt" />
     <None Remove="Day1Input.txt" />
     <None Remove="2023\Days\Day1\Day1.txt" />
@@ -78,6 +81,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day21\Day21Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2023\Days\Day22\Day22Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2023\Days\Day23\Day23Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2023\Days\Day25\Day25Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="2023\Days\Day2\Day2Input.txt">
